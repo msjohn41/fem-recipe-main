@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*START CSS STYLES*/
+:root{
+    --rose: #7a284e;
+    --dkstone: #312e2c;
+    --mdstone: #5f564d;
+    --ltstone: #e3ddd7;
+    --beige: #f3e5d7;
+    --brown: #854632;
+    --white: #ffffff;
+}
+
+body{
+    background-color: var(--beige);
+    margin: 0;
+    min-height: 125svh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'outfit';
+    line-height: 150%;
+}
+
+.container{
+    max-width: 375px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.hero-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Young Sarif';
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+h2{
+    font-family: 'Young Sarif';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--brown);
+    padding: 15px 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+hr{
+    color: var(--brown);
+    opacity: .05;
+}
+
+.description{
+    padding-bottom: 15px;
+}
+
+.prep{
+    padding: 0 15px 15px 15px;
+    background-color: rgba(122, 40, 78, .05);
+}
+
+.prep-time{
+    color: var(--rose);
+    font-size: 1.25rem;
+}
+
+.prep ul{
+    padding: 0 15px;
+}
+
+.prep li{
+    list-style-type: disc;
+}
+
+.prep li::marker{
+    color: var(--rose);
+}
+
+.ingredients ul{
+    padding: 0 15px;
+}
+
+.ingredients li{
+    list-style-type: disc;
+    padding-bottom: 10px;
+}
+
+.ingredients li::marker{
+    color: var(--brown);
+}
+
+.instructions ol{
+    padding: 0 15px;
+}
+
+.instructions li{
+    list-style-type: decimal;
+    padding-bottom: 10px;
+}
+
+.instructions li::marker{
+    color: var(--brown);
+}
+
+.nutrition p{
+    padding-bottom: 15px;
+}
+
+table{
+    width: 100%;
+}
+
+.nutrition-table td{
+    border-bottom: 1px solid rgba(133, 70, 50, .05);
+}
+
+.value{
+    font-weight: bold;
+    color: var(--brown);
+    padding-left: 150px;
+}
+
+.attribution { font-size: 11px; text-align: center; padding-top: 35px;}
+.attribution a { color: hsl(228, 45%, 44%); }
